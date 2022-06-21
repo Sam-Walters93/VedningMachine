@@ -1,0 +1,7 @@
+Snickers::2.10::0
+Kitkat::1.60::16
+Reeses::1.50::0
+Twizzlers::1.30::17
+Honey Bun::2.10::17
+Starburst::1.05::16
+PopTart::2.50::19
