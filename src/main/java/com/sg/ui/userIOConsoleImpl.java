@@ -14,20 +14,17 @@ import java.util.Scanner;
 public class userIOConsoleImpl implements userIO {
 
     final private Scanner console = new Scanner(System.in);
-
    
     @Override
     public void print(String msg) {
         System.out.println(msg);
     }
 
-    
     @Override
     public String readString(String msgPrompt) {
         System.out.println(msgPrompt);
         return console.nextLine();
     }
-
    
     @Override
     public int readInt(String msgPrompt) {
@@ -35,31 +32,25 @@ public class userIOConsoleImpl implements userIO {
         int num = 0;
         while (invalidInput) {
             try {
-                
-                String stringValue = this.readString(msgPrompt);
-               
-                num = Integer.parseInt(stringValue); 
-                invalidInput = false; 
+              String stringValue = this.readString(msgPrompt);
+              num = Integer.parseInt(stringValue); 
+              invalidInput = false; 
             } catch (NumberFormatException e) {
-               
                 this.print("Input error. Please try again.");
             }
         }
         return num;
     }
-
-   
+  
     @Override
     public int readInt(String msgPrompt, int min, int max) {
         int result;
         do {
             result = readInt(msgPrompt);
         } while (result < min || result > max);
-
         return result;
     }
-
-    
+ 
     @Override
     public long readLong(String msgPrompt) {
         while (true) {
@@ -71,7 +62,6 @@ public class userIOConsoleImpl implements userIO {
         }
     }
 
-    
     @Override
     public long readLong(String msgPrompt, long min, long max) {
         long result;
@@ -81,7 +71,6 @@ public class userIOConsoleImpl implements userIO {
 
         return result;
     }
-
     
     @Override
     public float readFloat(String msgPrompt) {
@@ -93,7 +82,6 @@ public class userIOConsoleImpl implements userIO {
             }
         }
     }
-
     
     @Override
     public float readFloat(String msgPrompt, float min, float max) {
@@ -104,7 +92,6 @@ public class userIOConsoleImpl implements userIO {
 
         return result;
     }
-
     
     @Override
     public double readDouble(String msgPrompt) {
@@ -116,8 +103,7 @@ public class userIOConsoleImpl implements userIO {
             }
         }
     }
-
-   
+ 
     @Override
     public double readDouble(String msgPrompt, double min, double max) {
         double result;
@@ -126,7 +112,6 @@ public class userIOConsoleImpl implements userIO {
         } while (result < min || result > max);
         return result;
     }
-
     
     @Override
     public BigDecimal readBigDecimal(String prompt) {
@@ -134,8 +119,7 @@ public class userIOConsoleImpl implements userIO {
         boolean invalidInput = true;
        
         while (invalidInput) {
-            try {
-               
+            try {              
                 System.out.println(prompt);
                
                 String stringInput = console.nextLine();

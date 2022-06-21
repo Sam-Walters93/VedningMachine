@@ -92,30 +92,26 @@ public class vendingMachineServiceLayerImplTest {
     
     @Test
     public void testGetChangePerCoin(){
-        //ARRANGE
         item kitKatClone = new item("Kitkat");
         kitKatClone.setCost(new BigDecimal("1.60"));
         kitKatClone.setInventory(9);
         
         BigDecimal money = new BigDecimal("2.50");
-        
-        //Change should be $0.90: 25c: 3, 10c: 1, 5c:1
+    
         Map<BigDecimal, BigDecimal> expectedChangePerCoin = new HashMap<>();
         expectedChangePerCoin.put(new BigDecimal("0.25"), new BigDecimal("3"));
         expectedChangePerCoin.put(new BigDecimal("0.10"), new BigDecimal("1"));
         expectedChangePerCoin.put(new BigDecimal("0.05"), new BigDecimal("1"));
-        
-        //ACT
+
         Map<BigDecimal, BigDecimal> changePerCoin = testService.getChangePerCoin(kitKatClone, money);
-        
-        //ASSERT
+
         assertEquals(changePerCoin.size(), 3, "There should be three coins");
         
     }
     
     @Test
     public void testGetItem() throws insufficientFundsException, vendingMachinePersistenceException, NoItemInventoryException {
-        //ARRANGE
+
         item snickersClone = new item("Snickers");
         snickersClone.setCost(new BigDecimal("2.10"));
         snickersClone.setInventory(0);
@@ -126,7 +122,7 @@ public class vendingMachineServiceLayerImplTest {
         honeyBunClone.setInventory(testDao.getItemInventory("Honey Bun"));
         
         item itemWanted = null;
-        //ACT
+
         try {
             itemWanted = testService.getItem("Snickers", money);
             fail("The item wanted is out of stock.");
@@ -139,7 +135,6 @@ public class vendingMachineServiceLayerImplTest {
             fail("The item wanted is in stock.");
         } 
 
-        //ASSERT
         assertNotNull(itemWanted, "change should not be null");
         assertEquals(itemWanted, honeyBunClone,"The item retrieved should be snickers");
     }
@@ -147,25 +142,23 @@ public class vendingMachineServiceLayerImplTest {
     
     @Test
     public void testRemoveOneItemFromInventory() throws vendingMachinePersistenceException {
-        //ARRANGE
+
         String name = "Snickers";
         
-        //There are no snickers left
         try{
-            //ACT
+        
             testService.removeOneItemFromInventory(name);
-            //ASSERT
+           
             fail("There are no snickers left, exception should be thrown");
         } catch (NoItemInventoryException e) {  
         }
         
         String honeyBun = "Honey Bun";
         try{
-            //ACT
             testService.removeOneItemFromInventory(honeyBun);
         } catch (NoItemInventoryException e) {
             if (testDao.getItemInventory(honeyBun)>0){
-                fail("Malteasers are in stock, exception should not be thrown");
+                fail("Honey Bun are in stock, exception should not be thrown");
             }
         } 
     }    
