@@ -17,9 +17,7 @@ import java.util.Map;
  * @author stwal
  */
 public class VendingMachineServiceLayerImpl implements VendingMachineServiceLayer{
-    //The service layer is responsible for the business logic of an application. It sits between
-    //the controller and DAOs.
-    
+ 
     private vendingMachineAuditDao auditDao;
     private vendingMachineDao dao;
 
@@ -30,8 +28,7 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
 
     @Override
     public void checkIfEnoughMoney(item item, BigDecimal inputMoney) throws insufficientFundsException {
-        //Checks if the user has input enough money to buy selected item
-        //If the cost of the item is greater than the amount of money put in
+      
         if (item.getCost().compareTo(inputMoney)==1) {
             throw new insufficientFundsException (
             "ERROR: insufficient funds, you have only input "+ inputMoney);  
@@ -40,9 +37,9 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
     
     @Override
     public Map<String, BigDecimal>  getItemsInStockWithCosts () throws vendingMachinePersistenceException{
-        //Map of key=name, value=cost
-         Map<String, BigDecimal> itemsInStockWithCosts = dao.getMapOfItemNamesInStockWithCosts();
-         return itemsInStockWithCosts;
+        
+        Map<String, BigDecimal> itemsInStockWithCosts = dao.getMapOfItemNamesInStockWithCosts();
+        return itemsInStockWithCosts;
     }
     
     @Override
@@ -56,16 +53,11 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
     public item getItem(String name, BigDecimal inputMoney) throws insufficientFundsException, NoItemInventoryException, vendingMachinePersistenceException {
         item wantedItem = dao.getItem(name);   
         
-     
         if (wantedItem == null) {
             throw new NoItemInventoryException (
                 "ERROR: there are no " + name + "'s in the vending machine.");
         }
-        
-      
         checkIfEnoughMoney(wantedItem,inputMoney);
-        
-      
         removeOneItemFromInventory(name);
         return wantedItem;
     }
@@ -75,10 +67,8 @@ public class VendingMachineServiceLayerImpl implements VendingMachineServiceLaye
         
         if (dao.getItemInventory(name)>0) {
             dao.removeOneItemFromInventory(name);
-          
             auditDao.writeAuditEntry(" One " + name + " removed");
         } else {
-           
             throw new NoItemInventoryException (
             "ERROR: " + name + " is out of stock.");
         }

@@ -42,10 +42,10 @@ public class vendingMachineController {
         inputMoney = getMoney();
             while (keepGoing) {
             try {
-                //Display the menu and get a selection
+             
                 itemSelection = getItemSelection();
                 
-                //If the user selects Exit, the program is exited
+               
                 if (itemSelection.equalsIgnoreCase("Exit")) {
                     keepGoing = false;
                     break;

@@ -53,7 +53,7 @@ public class vendingMachineView {
     public void displayChangeDuePerCoin(Map<BigDecimal, BigDecimal> changeDuePerCoin) {
         changeDuePerCoin.entrySet().forEach(entry ->{
                  System.out.println(entry.getKey() + "c : " +entry.getValue());
-         });
+        });
     }
 
     public void displayExitBanner() {
@@ -72,6 +72,4 @@ public class vendingMachineView {
     public void displayPleaseTryAgainMsg() {
         io.print("Please select something else.");
     }
-
-
 }

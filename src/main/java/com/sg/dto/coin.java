@@ -9,7 +9,6 @@ package com.sg.dto;
  * @author stwal
  */
 public enum coin {
-    //Enum is a special class that represents a group of constants, like final variables
     QUARTER(25), DIME(10), NICKEL(5), PENNY(1);
     private final int value;
     

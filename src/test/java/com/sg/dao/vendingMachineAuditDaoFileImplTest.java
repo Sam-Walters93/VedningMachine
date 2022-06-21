@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
  *
  * @author stwal
  */
-public class vendingMachineAuditDaoFileImplTest {  //Not sure how to use - do i need to write methods to test? to read from file
+public class vendingMachineAuditDaoFileImplTest { 
     String testAuditFile = "testAuditFile.txt";
     vendingMachineAuditDao testAuditDao = new vendingMachineAuditDaoFileImpl(testAuditFile);
     
@@ -39,10 +39,9 @@ public class vendingMachineAuditDaoFileImplTest {  //Not sure how to use - do i 
 
     @Test
     public void testWriteAuditEntry() throws vendingMachinePersistenceException {
-        //ARRANGE
+   
         String entry = "One Snickers removed.";
         
-        //ACT
         testAuditDao.writeAuditEntry(entry);
         
     }
