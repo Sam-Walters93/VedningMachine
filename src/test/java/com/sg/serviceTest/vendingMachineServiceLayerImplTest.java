@@ -4,16 +4,16 @@
  */
 package com.sg.serviceTest;
 
-import com.sg.dao.vendingMachineAuditDao;
-import com.sg.dao.vendingMachineAuditDaoFileImpl;
-import com.sg.dao.vendingMachineDao;
-import com.sg.dao.vendingMachineDaoFileImpl;
-import com.sg.dao.vendingMachinePersistenceException;
-import com.sg.dto.item;
-import com.sg.service.NoItemInventoryException;
-import com.sg.service.VendingMachineServiceLayer;
-import com.sg.service.VendingMachineServiceLayerImpl;
-import com.sg.service.insufficientFundsException;
+import com.sg.vendingMachine.dao.vendingMachineAuditDao;
+import com.sg.vendingMachine.dao.vendingMachineAuditDaoFileImpl;
+import com.sg.vendingMachine.dao.vendingMachineDao;
+import com.sg.vendingMachine.dao.vendingMachineDaoFileImpl;
+import com.sg.vendingMachine.dao.vendingMachinePersistenceException;
+import com.sg.vendingMachine.dto.item;
+import com.sg.vendingMachine.service.NoItemInventoryException;
+import com.sg.vendingMachine.service.VendingMachineServiceLayer;
+import com.sg.vendingMachine.service.VendingMachineServiceLayerImpl;
+import com.sg.vendingMachine.service.insufficientFundsException;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;

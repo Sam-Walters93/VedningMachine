@@ -4,16 +4,10 @@
  */
 package com.sg.vendingMachine;
 
-import com.sg.controller.vendingMachineController;
-import com.sg.dao.vendingMachineAuditDao;
-import com.sg.dao.vendingMachineAuditDaoFileImpl;
-import com.sg.dao.vendingMachineDao;
-import com.sg.dao.vendingMachineDaoFileImpl;
-import com.sg.service.VendingMachineServiceLayer;
-import com.sg.service.VendingMachineServiceLayerImpl;
-import com.sg.ui.userIO;
-import com.sg.ui.userIOConsoleImpl;
-import com.sg.ui.vendingMachineView;
+
+import com.sg.vendingMachine.controller.vendingMachineController;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  *
@@ -25,14 +19,30 @@ public class app {
      * @param args the command line arguments
      */
        public static void main(String[] args) {
-        userIO io = new userIOConsoleImpl();
-        vendingMachineView view = new vendingMachineView(io);
-        vendingMachineAuditDao auditDao = new vendingMachineAuditDaoFileImpl();
-        vendingMachineDao dao = new vendingMachineDaoFileImpl();
-        VendingMachineServiceLayer service = new VendingMachineServiceLayerImpl(auditDao, dao);
+//        userIO io = new userIOConsoleImpl();
+//        vendingMachineView view = new vendingMachineView(io);
+//        vendingMachineAuditDao auditDao = new vendingMachineAuditDaoFileImpl();
+//        vendingMachineDao dao = new vendingMachineDaoFileImpl();
+//        VendingMachineServiceLayer service = new VendingMachineServiceLayerImpl(auditDao, dao);
+//        
+//        vendingMachineController controller = new vendingMachineController(view, service);
+//        
+//        controller.run();
+//
+//        ApplicationContext appContext
+//            = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+//
+//        vendingMachineController controller = appContext.getBean("controller", vendingMachineController.class);
+//        controller.run();
+
+        ApplicationContext appContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+//            appContext.scan("com.sg.vendingMachine");
+//            appContext.refresh();
         
-        vendingMachineController controller = new vendingMachineController(view, service);
+
+        vendingMachineController controller = appContext.getBean("controller", vendingMachineController.class);
         
         controller.run();
+
     }
 }

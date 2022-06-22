@@ -7,3 +7,7 @@
 2022-06-21T14:17:26.039708400 :  One Starburst removed
 2022-06-21T14:17:34.306024200 :  One Twizzlers removed
 2022-06-21T14:18:14.174421300 :  One Reeses removed
+2022-06-22T14:25:38.442116300 :  One Kitkat removed
+2022-06-22T14:31:37.116988300 :  One Kitkat removed
+2022-06-22T14:31:51.114644100 :  One Starburst removed
+2022-06-22T14:32:10.811604500 :  One Honey Bun removed

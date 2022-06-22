@@ -19,3 +19,61 @@
 2022-06-21T14:14:41.740042700 : One Snickers removed.
 2022-06-21T14:14:41.782052 :  One Honey Bun removed
 2022-06-21T14:14:41.786052900 :  One Honey Bun removed
+2022-06-21T14:55:47.807398400 : One Snickers removed.
+2022-06-21T14:55:47.854408800 :  One Honey Bun removed
+2022-06-21T14:55:47.863410300 :  One Honey Bun removed
+2022-06-21T15:01:13.903609100 : One Snickers removed.
+2022-06-21T15:01:13.946618800 :  One Honey Bun removed
+2022-06-21T15:01:13.951619800 :  One Honey Bun removed
+2022-06-21T15:03:47.461672700 : One Snickers removed.
+2022-06-21T15:03:47.500681300 :  One Honey Bun removed
+2022-06-21T15:03:47.504682500 :  One Honey Bun removed
+2022-06-21T15:06:21.687274600 : One Snickers removed.
+2022-06-21T15:06:21.727284200 :  One Honey Bun removed
+2022-06-21T15:06:21.729284 :  One Honey Bun removed
+2022-06-21T15:09:33.056428200 : One Snickers removed.
+2022-06-22T11:01:01.249215900 : One Snickers removed.
+2022-06-22T11:45:06.675961600 : One Snickers removed.
+2022-06-22T11:46:34.562608500 : One Snickers removed.
+2022-06-22T11:48:47.738531800 : One Snickers removed.
+2022-06-22T11:49:48.660916400 : One Snickers removed.
+2022-06-22T11:51:10.710904700 : One Snickers removed.
+2022-06-22T11:51:54.492016900 : One Snickers removed.
+2022-06-22T11:55:28.290001900 : One Snickers removed.
+2022-06-22T11:55:54.577981200 : One Snickers removed.
+2022-06-22T11:56:51.592170500 : One Snickers removed.
+2022-06-22T12:09:04.687376200 : One Snickers removed.
+2022-06-22T13:53:05.237479900 : One Snickers removed.
+2022-06-22T13:55:25.476247300 : One Snickers removed.
+2022-06-22T13:55:39.364355500 : One Snickers removed.
+2022-06-22T13:55:55.135568400 : One Snickers removed.
+2022-06-22T13:57:40.929956200 : One Snickers removed.
+2022-06-22T13:57:57.169448700 : One Snickers removed.
+2022-06-22T13:59:43.622813600 : One Snickers removed.
+2022-06-22T14:04:33.969663600 : One Snickers removed.
+2022-06-22T14:04:57.590184700 : One Snickers removed.
+2022-06-22T14:05:59.271132 : One Snickers removed.
+2022-06-22T14:07:22.461472300 : One Snickers removed.
+2022-06-22T14:08:43.054347600 : One Snickers removed.
+2022-06-22T14:12:58.030072500 : One Snickers removed.
+2022-06-22T14:15:10.725650200 : One Snickers removed.
+2022-06-22T14:15:18.114769800 : One Snickers removed.
+2022-06-22T14:17:06.271668700 : One Snickers removed.
+2022-06-22T14:18:04.953001700 : One Snickers removed.
+2022-06-22T14:21:58.949784500 : One Snickers removed.
+2022-06-22T14:22:14.482251700 : One Snickers removed.
+2022-06-22T14:24:00.834247200 : One Snickers removed.
+2022-06-22T14:25:09.574831300 : One Snickers removed.
+2022-06-22T14:26:26.004848900 : One Snickers removed.
+2022-06-22T14:27:22.985821100 : One Snickers removed.
+2022-06-22T14:28:11.338450600 : One Snickers removed.
+2022-06-22T14:28:41.786924800 : One Snickers removed.
+2022-06-22T14:30:54.003451200 : One Snickers removed.
+2022-06-22T14:31:08.713423200 : One Snickers removed.
+2022-06-22T14:31:26.070693800 : One Snickers removed.
+2022-06-22T14:33:00.634799400 : One Snickers removed.
+2022-06-22T14:33:00.665806700 :  One Honey Bun removed
+2022-06-22T14:33:00.671806300 :  One Honey Bun removed
+2022-06-22T14:33:18.859674700 : One Snickers removed.
+2022-06-22T14:33:18.887682400 :  One Honey Bun removed
+2022-06-22T14:33:18.893683900 :  One Honey Bun removed

@@ -4,7 +4,10 @@
  */
 package com.sg.dao;
 
-import com.sg.dto.item;
+import com.sg.vendingMachine.dao.vendingMachineDaoFileImpl;
+import com.sg.vendingMachine.dao.vendingMachineDao;
+import com.sg.vendingMachine.dao.vendingMachinePersistenceException;
+import com.sg.vendingMachine.dto.item;
 import java.math.BigDecimal;
 import java.util.Map;
 import org.junit.jupiter.api.AfterEach;
